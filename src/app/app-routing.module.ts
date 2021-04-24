@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'greetings',
+    loadChildren: () => import('./greetings/greetings.module').then( m => m.GreetingsPageModule)
+  },
+  {
+    path: 'question',
+    loadChildren: () => import('./question/question.module').then( m => m.QuestionPageModule)
+  },
+  {
+    path: 'answer',
+    loadChildren: () => import('./answer/answer.module').then( m => m.AnswerPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'custom',
+    loadChildren: () => import('./custom/custom.module').then( m => m.CustomPageModule)
+  },
 ];
 
 @NgModule({

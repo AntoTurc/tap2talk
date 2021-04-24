@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Custom</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg">
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button id="1" (click) = "speak(1)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="2" (click) = "speak(2)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="3" (click) = "speak(3)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="4" (click) = "speak(4)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button id="5" (click) = "speak(5)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="6" (click) = "speak(6)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="7" (click) = "speak(7)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button id="8" (click) = "speak(8)" class="square" expand="block">Block Button</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+
+
+
+  
+ <!-- fab placed to the bottom end -->
+ <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button>
+    <ion-icon (click)="CreatePrompt()" name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+
+
+<ion-fab vertical="bottom" horizontal="start" slot="fixed">
+  <ion-fab-button>
+    <ion-icon name="arrow-forward-circle"></ion-icon>
+  </ion-fab-button>
+  <ion-fab-list side="end">
+    <ion-fab-button >
+      <ion-icon  routerLink="/greetings" id="chatIcon"  name="happy-outline" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button >
+      <ion-icon routerLink="/order" id="orderIcon" name="fast-food" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button >
+      <ion-icon routerLink="/question" id="questionIcon" name="alert-outline" ></ion-icon>
+    </ion-fab-button>
+    <ion-fab-button >
+      <ion-icon routerLink="/answer" id="answerIcon"  name="chatbubble-ellipses-outline" ></ion-icon>
+    </ion-fab-button>
+    
+  </ion-fab-list>
+</ion-fab>
+
+  
+
+
+</ion-content>

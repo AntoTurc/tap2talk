@@ -1,0 +1,83 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>answer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="bg">
+  <ion-item>
+    <ion-textarea [(ngModel)]="gtext" placeholder="Quick text-to-speech"></ion-textarea>
+  </ion-item>
+
+  <ion-button (click)="speak()" expand="block">SPEAK</ion-button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="square">
+        <img id = "morning" (click)="speakthis('yes')" src="assets/answer/yes.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="afternoon" (click)="speakthis('no')" src="assets/answer/no.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="evening" (click)="speakthis('I agree')" src="assets/answer/agree.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="night" (click)="speakthis('I disagree')" src="assets/answer/refuse.png">
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="square">
+        <img id = "hi" (click)="speakthis('more')" src="assets/answer/more.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "howareyou" (click)="speakthis('less')" src="assets/answer/less.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "sorry" (click)="speakthis('thank you')" src="assets/answer/thank.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "bye" (click)="speakthis('Could you repeat what you\'ve said')" src="assets/answer/repeat.png">
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button >
+        <ion-icon  routerLink="/greetings" id="chatIcon"  name="happy-outline" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/order" id="orderIcon" name="fast-food" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/question" id="questionIcon" name="alert-outline" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/custom" id="customIcon"  name="brush-outline" ></ion-icon>
+      </ion-fab-button>
+      
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

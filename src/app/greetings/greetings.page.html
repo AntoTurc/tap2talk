@@ -1,0 +1,100 @@
+
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Greetings</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="bg">
+  <ion-item>
+    <ion-textarea [(ngModel)]="gtext" placeholder="Quick text-to-speech"></ion-textarea>
+  </ion-item>
+
+  <ion-button (click)="speak()" expand="block">SPEAK</ion-button>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="square">
+        <img id = "morning" (click)="speakthis('Good morning')" src="assets/greetings/sunrise.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="afternoon" (click)="speakthis('Good afternoon')" src="assets/greetings/sun.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="evening" (click)="speakthis('Good evening')" src="assets/greetings/evening.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id="night" (click)="speakthis('Good night')" src="assets/greetings/moon.png">
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="square">
+        <img id = "hi" (click)="speakthis('hi')" src="assets/greetings/hi.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "howareyou" (click)="speakthis('how are you')" src="assets/greetings/howareyou.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "sorry" (click)="speakthis('sorry')" src="assets/greetings/sorry.png">
+      </div>
+      </ion-col>
+      <ion-col>
+        <div class="square">
+        <img id = "bye" (click)="speakthis('goodbye')" src="assets/greetings/bye.png">
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="arrow-forward-circle"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="end">
+      <ion-fab-button >
+        <ion-icon routerLink="/order" id="orderIcon" name="fast-food" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/question" id="questionIcon" name="alert-outline" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/answer" id="answerIcon"  name="chatbubble-ellipses-outline" ></ion-icon>
+      </ion-fab-button>
+      <ion-fab-button >
+        <ion-icon routerLink="/custom" id="customIcon"  name="brush-outline" ></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+  <div class="mute">
+    <img id = "muteicon" (click)="speakthis('I am mute, please give me a moment to answer')" src="assets/greetings/muted.png">
+  </div>
+  </ion-col>
+  </ion-row>
+  </ion-grid>
+  
+  
+
+</ion-content>
+

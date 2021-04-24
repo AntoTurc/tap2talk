@@ -1,0 +1,35 @@
+
+
+#orderIcon{
+    color: #e69e05;
+   }
+   #questionIcon{
+    color: red;
+   }
+   #answerIcon{
+     color: #1ecf0e;
+   }
+   #customIcon{
+     color: blueviolet;
+   }
+   #chatIcon{
+    color:#25478f;
+  }
+
+
+  .square{
+    //border: 2px solid black;
+    //border-radius: 7px;
+    display: none;
+   
+}
+.bg{
+  --background: url(/assets/background/bg_page.png) 0 0/100% 100% no-repeat; 
+  
+  
+}
+
+ion-title{
+  text-align: center;
+  font-family: fantasy;
+}

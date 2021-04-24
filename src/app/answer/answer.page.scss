@@ -1,0 +1,78 @@
+
+#morning {
+  margin:0;
+  filter: invert(57%) sepia(69%) saturate(4985%) hue-rotate(82deg) brightness(94%) contrast(104%);
+ }
+#afternoon {
+  margin:0;
+  filter: invert(12%) sepia(85%) saturate(3819%) hue-rotate(354deg) brightness(92%) contrast(119%);
+}
+#evening {
+  margin:0;
+  filter: invert(57%) sepia(69%) saturate(4985%) hue-rotate(82deg) brightness(94%) contrast(104%);
+ }
+#night {
+  margin:0;
+  filter: invert(12%) sepia(85%) saturate(3819%) hue-rotate(354deg) brightness(92%) contrast(119%);
+}
+#hi{
+  filter: invert(57%) sepia(69%) saturate(4985%) hue-rotate(82deg) brightness(94%) contrast(104%);
+
+}
+#howareyou{
+  filter: invert(12%) sepia(41%) saturate(5649%) hue-rotate(219deg) brightness(90%) contrast(103%);
+  
+}
+#sorry{
+  filter: invert(12%) sepia(85%) saturate(3819%) hue-rotate(354deg) brightness(92%) contrast(119%);
+}
+#bye{
+  filter: invert(46%) sepia(99%) saturate(727%) hue-rotate(1deg) brightness(97%) contrast(103%);
+
+}
+
+ion-title{
+  text-align: center;
+  font-family: fantasy;
+}
+#orderIcon{
+  color: #e69e05;
+ }
+ #questionIcon{
+  color: red;
+ }
+ #answerIcon{
+   color: #1ecf0e;
+ }
+ #customIcon{
+   color: blueviolet;
+ }
+ #chatIcon{
+  color:#094cde;
+}
+
+
+ion-grid{
+  width:75%
+}
+div.square{
+  border: 2px solid black;
+  border-radius: 7px;
+}
+div.square:hover{
+  border: 2px solid grey;
+  border-radius: 7px;
+}
+
+
+#logo{
+  margin-top: -70px;
+  margin-bottom: -70px;
+}
+
+.bg{
+  --background: url(/assets/background/bg_page.png) 0 0/100% 100% no-repeat; 
+  
+  
+}
+
